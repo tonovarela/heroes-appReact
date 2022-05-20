@@ -2,8 +2,7 @@ import { Link } from "react-router-dom";
 
 
 export const HeroCard = ({ id,
-    superhero,
-    publisher,    
+    superhero,    
     alter_ego,
     first_appearance,
     characters
@@ -14,8 +13,8 @@ export const HeroCard = ({ id,
         <div className="row">
             <div className="card">
                 <div className="row no-gutters">
-                    <div className="col-4">
-                        <img src={imagePath} className="card-img" alt={superhero} />
+                    <div className="col-4 ">
+                        <img src={imagePath} className="card-img " alt={superhero} />
                     </div>
                     <div className="col-8">
                         <div className="card-body">

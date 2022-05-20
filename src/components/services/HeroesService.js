@@ -11,6 +11,7 @@ export class HeroesService {
     }
 
     getHeroById(id) {
+        console.log("getHero");
         return heroes.find(hero => hero.id === id);
     }
 
