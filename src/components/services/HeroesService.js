@@ -11,8 +11,17 @@ export class HeroesService {
     }
 
     getHeroById(id) {
-        console.log("getHero");
         return heroes.find(hero => hero.id === id);
+    }
+
+    getHeroesByName(name = '') {          
+        console.log("get");
+        if (name===""){
+            return  [];
+        }
+        return heroes.filter(heroe=>heroe.superhero.toLowerCase().includes(name.toLowerCase()));
+     
+
     }
 
 
