@@ -10,9 +10,10 @@ export const Navbar = () => {
     const navigate = useNavigate();
     
     const logOut =()=>{        
-        
+        const action = { type:types.logout}
+        dispatch(action)
         navigate("/login",{replace:true})
-         dispatch({},types.logout)
+         
 
     }
 
